@@ -2,44 +2,20 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
+  <title>البحث عن صحة الشهادة</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>خدمات شئون الخريجين - جامعة بني سويف</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <div class="header-content">
-      <img src="images/logo-bsu.png" alt="شعار جامعة بني سويف" class="logo">
-      <h1>خدمات شئون الخريجين</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">التحقق من صحة الشهادة</a></li>
-        <li><a href="#">الاستخراج والتوثيق</a></li>
-        <li><a href="#">خدمات أخرى</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <div class="container">
-    <h2>ادخل الرقم القومي للخريج</h2>
-    <input type="text" id="national-id" placeholder="مثال: 29801010123456">
-    <button onclick="search()">بحث</button>
+    <h2>🔎 البحث عن صحة الشهادة</h2>
+    <form id="searchForm">
+      <button type="submit">ابحث الآن</button>
+      <input type="text" id="searchInput" placeholder="البحث بالرقم القومي للخريج">
+    </form>
+    <div id="results"></div>
   </div>
-
-  <div class="slider-container">
-    <div class="slider" id="slider">
-      <img src="images/img1.jpg" alt="صورة 1">
-      <img src="images/img2.jpg" alt="صورة 2">
-      <img src="images/img3.jpg" alt="صورة 3">
-    </div>
-  </div>
-
-  <footer>
-    <p>© 2025 جامعة بني سويف - جميع الحقوق محفوظة</p>
-  </footer>
-
+  <audio id="successSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_fa69c73fb6.mp3?filename=success-1-6297.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
