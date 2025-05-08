@@ -1,110 +1,38 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 15px 10px;
-  text-align: center;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.logo {
-  max-width: 80px;
-  margin-left: 15px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  background-color: rgba(255,255,255,0.1);
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-  background-color: rgba(255,255,255,0.3);
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
 }
 
 .container {
-  margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin-top: 50px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #6C63FF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card {
+  background: #f9f9f9;
   padding: 20px;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-input[type="text"] {
-  padding: 10px;
-  width: 300px;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.slider-container {
-  width: 80%;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.4);
-}
-
-.slider {
-  display: flex;
-  width: 300%;
-  animation: slide 9s infinite;
-}
-
-.slider img {
-  width: 100%;
-  object-fit: cover;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
-
-footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 15px;
-  color: #ddd;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 10px 0;
 }
